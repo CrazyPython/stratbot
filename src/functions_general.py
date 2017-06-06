@@ -16,9 +16,7 @@ def pp(message, mtype='INFO'):
 
 
 def ppi(channel, message, username):
-    print(
-        '[%s %s] <%s> %s' % (time.strftime('%H:%M:%S', time.gmtime()), channel, grn.format(username.lower()), message))
-
+    return
 
 def pbot(message, channel=''):
     if channel:

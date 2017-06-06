@@ -17,7 +17,7 @@ class cron:
     def get_next_message():
         with open("schedule.txt", "r") as f:
             messages = f.readlines()
-            writeback = '\n'.join(messages[1:])
+            writeback = ''.join(messages[1:])
         with open("schedule.txt", "w") as f:
             f.write(writeback)
         return messages[0]
